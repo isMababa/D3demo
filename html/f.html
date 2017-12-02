@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--[if lt IE9]-->
+    <!--[endif]-->
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/d3.min.js"></script>
+</head>
+<body>
+<div class="f_All" style="position: absolute;width: 99%;height:100%;">
+    <div class="f_header" style="position: absolute;width: 100%;height:10%;line-height:100%;text-align:left;color:#fff">
+        <h3>北京地区大数据岗位需求及薪资水平分析</h3>
+    </div>
+    <div class="f_cont" style="position: absolute;width: 100%;height:88%;top:10%">
+        <div class="f_left" style="position: absolute;width: 40%;height:96%;margin:1%;box-sizing:border-box">
+            <div id="f_leftTop" class="Top" style="position: absolute;width: 100%;height: 55%;top: 0"></div>
+            <div id="f_leftBtm" class="f_Bottom" style="position: absolute;width: 100%;height: 43%;top:57%;"></div>
+        </div>
+        <div class="f_right" style="position: absolute;width: 56%;height:96%;right:0;margin:1%;box-sizing:border-box">
+            <div id="f_rightTop" class="f_Top" style="position: absolute;width: 100%;height: 55%;top: 0;">
+                <div id="f_rightTop_l" class="f_Top_l" style="position: absolute;width: 49%;height: 100%;top: 0;left:0;"></div>
+                <div id="f_rightTop_r" class="f_Top_r" style="position: absolute;width: 49%;height: 100%;top: 0;right:0;"></div>
+            </div>
+            <div id="f_rightBtm" class="f_Bottom" style="position: absolute;width: 100%;height: 43%;top:57%;"></div>
+        </div>
+    </div>
+</div>
+
+<script src="../js/bigdata_salary.js"></script>
+</body>
+</html>
+<script>
+    var data_basic=[
+        {position:'数据库',demand:38, percentage:2.61,meanvaluelower:14.21,standarddeviationlower:4.96,meanvalueupper:23.76,standarddeviationupper:11.17},
+        {position:'数据分析',demand:714,percentage:49.11,meanvaluelower:12.96,standarddeviationlower:4.86,meanvalueupper:20.54,standarddeviationupper:11.89},
+        {position:'数据挖掘',demand:525,percentage:36.11,meanvaluelower:19.89,standarddeviationlower:6.38,meanvalueupper:35.72,standarddeviationupper:11.74},
+        {position:'分析挖掘',demand:21,percentage:1.44,meanvaluelower:15.90,standarddeviationlower:7.26,meanvalueupper:29.09,standarddeviationupper:15.72},
+        {position:'可视化',demand:5,percentage:0.34,meanvaluelower:12.00,standarddeviationlower:2.44,meanvalueupper:21.00,standarddeviationupper:2},
+        {position:'商业智能',demand:151,percentage:10.39,meanvaluelower:15.98,standarddeviationlower:9.37,meanvalueupper:26.20,standarddeviationupper:14.54},
+
+    ];
+    var data_edu=[
+        {name:'专科',percentage:2.52},
+        {name:'本科',percentage:84.69},
+        {name:'硕士',percentage:10.28},
+        {name:'博士',percentage:0},
+        {name:'其他',percentage:2.51}
+    ];
+    var data_exp=[{name:'其他',percentage:10.7},{name:'经验1-3年',percentage:37.13},{name:'经验3-5年',percentage:45.94},{name:'经验5年以上',percentage:6.23}];
+    var titles=['大数据岗位及人才需求','大数据岗位学历要求','大数据岗位经验要求','大数据岗位平均薪资下限及标准差','大数据岗位平均薪资上限及标准差'];
+    var xData=[],yData11=[],yData12=[],yData13=[],yData21=[],yData22=[],yData23=[];
+    for(var i=0;i<data_basic.length;i++){
+        xData.push(data_basic[i].position);
+        yData11.push(data_basic[i].meanvaluelower);
+        yData12.push(data_basic[i].meanvaluelower-data_basic[i].standarddeviationlower);
+        yData13.push(data_basic[i].meanvaluelower+data_basic[i].standarddeviationlower);
+        yData21.push(data_basic[i].meanvalueupper);
+        yData22.push(data_basic[i].meanvalueupper-data_basic[i].standarddeviationupper);
+        yData23.push(data_basic[i].meanvalueupper+data_basic[i].standarddeviationupper);
+
+    };
+    D3.FdrawFunnel("f_leftTop",data_basic,titles[0]);
+    D3.FdrawPie('f_leftBtm',data_edu,titles[1]);
+    D3.FdrawPie('f_rightBtm',data_exp,titles[2]);
+    D3.FdrawLines('f_rightTop_l',xData,yData11,yData12,yData13,true,titles[3]);
+    D3.FdrawLines('f_rightTop_r',xData,yData21,yData22,yData23,true,titles[4]);
+</script>

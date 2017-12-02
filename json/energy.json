@@ -1,0 +1,296 @@
+{
+  "nodes": [
+    {"name": "China"},
+    {"name": "BeiJing"},
+    {"name": "ShangHai"},
+    {"name": "HangZhou"},
+    {"name": "ShenZhen"},
+    {"name": "GuangZhou"},
+    {"name": "others"},
+    {"name": "male"},
+    {"name": "female"},
+    {"name": "age<20"},
+    {"name": "20-25 year"},
+    {"name": "25-30 year"},
+    {"name": "30-40 year"},
+    {"name": ">40"},
+    {"name": "<6k"},
+    {"name": "6k-8k"},
+    {"name": "8k-10k"},
+    {"name": "10k-15k"},
+    {"name": "15-20k"},
+    {"name": "20-30k"},
+    {"name": ">30k"}
+
+  ],
+  "links": [
+    {
+      "source": 0,
+      "target": 1,
+      "value": 20079
+    },
+    {
+      "source": 0,
+      "target": 2,
+      "value": 18333
+    },
+    {
+      "source": 0,
+      "target": 3,
+      "value": 12222
+    },
+    {
+      "source": 0,
+      "target": 4,
+      "value": 17460
+    },
+    {
+      "source": 0,
+      "target": 5,
+      "value": 10476
+    },
+    {
+      "source": 0,
+      "target": 6,
+      "value": 8730
+    },
+    {
+      "source": 1,
+      "target": 7,
+      "value": 11349
+    },
+    {
+      "source": 1,
+      "target": 8,
+      "value":7857
+    },    {
+      "source": 2,
+      "target": 7,
+      "value": 11349
+    },
+    {
+      "source": 2,
+      "target": 8,
+      "value": 6984
+    },    {
+      "source": 3,
+      "target": 7,
+      "value": 6984
+    },
+    {
+      "source": 3,
+      "target": 8,
+      "value": 4365
+    },    {
+      "source": 4,
+      "target": 7,
+      "value": 12222
+    },
+    {
+      "source": 4,
+      "target": 8,
+      "value": 5238
+    },    {
+      "source": 5,
+      "target": 7,
+      "value": 6984
+    },
+    {
+      "source": 5,
+      "target": 8,
+      "value": 3492
+    },    {
+      "source": 6,
+      "target": 7,
+      "value": 6111
+    },
+    {
+      "source": 6,
+      "target": 8,
+      "value": 2619
+    },
+    {
+      "source": 7,
+      "target": 9,
+      "value": 2619
+    },    {
+      "source": 7,
+      "target": 10,
+      "value": 15714
+    },    {
+      "source": 7,
+      "target": 11,
+      "value": 18333
+    },    {
+      "source": 7,
+      "target": 12,
+      "value": 13095
+    },    {
+      "source": 7,
+      "target": 13,
+      "value": 6111
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "value": 873
+    },    {
+      "source": 8,
+      "target": 10,
+      "value": 7857
+    },    {
+      "source": 8,
+      "target": 11,
+      "value": 11349
+    },    {
+      "source": 8,
+      "target": 12,
+      "value": 6984
+    },    {
+      "source": 8,
+      "target": 13,
+      "value": 4365
+    },
+    {
+      "source": 9,
+      "target": 14,
+      "value": 2619
+    },    {
+      "source": 9,
+      "target": 15,
+      "value": 873
+    },    {
+      "source": 9,
+      "target": 16,
+      "value": 0
+    },    {
+      "source": 9,
+      "target": 17,
+      "value": 0
+    },    {
+      "source": 9,
+      "target": 18,
+      "value": 0
+    },    {
+      "source": 9,
+      "target": 19,
+      "value": 0
+    },    {
+      "source": 9,
+      "target": 20,
+      "value": 0
+    },    {
+      "source": 10,
+      "target": 14,
+      "value": 1746
+    },    {
+      "source": 10,
+      "target": 15,
+      "value": 5238
+    },    {
+      "source": 10,
+      "target": 16,
+      "value": 8730
+    },    {
+      "source": 10,
+      "target": 17,
+      "value": 4365
+    },    {
+      "source": 10,
+      "target": 18,
+      "value": 2619
+    },    {
+      "source": 10,
+      "target": 19,
+      "value": 873
+    },    {
+      "source": 10,
+      "target": 20,
+      "value": 0
+    },   {
+      "source": 11,
+      "target": 14,
+      "value": 0
+    },    {
+      "source": 11,
+      "target": 15,
+      "value": 3492
+    },    {
+      "source": 11,
+      "target": 16,
+      "value": 8730
+    },    {
+      "source": 11,
+      "target": 17,
+      "value": 8730
+    },    {
+      "source": 11,
+      "target": 18,
+      "value": 5238
+    },    {
+      "source": 11,
+      "target": 19,
+      "value": 2619
+    },    {
+      "source": 11,
+      "target": 20,
+      "value": 873
+    },     {
+      "source": 12,
+      "target": 14,
+      "value": 0
+    },    {
+      "source": 12,
+      "target": 15,
+      "value": 0
+    },    {
+      "source": 12,
+      "target": 16,
+      "value": 4365
+    },    {
+      "source": 12,
+      "target": 17,
+      "value": 5238
+    },    {
+      "source": 12,
+      "target": 18,
+      "value": 6111
+    },    {
+      "source": 12,
+      "target": 19,
+      "value": 2619
+    },    {
+      "source": 12,
+      "target": 20,
+      "value": 1746
+    },     {
+      "source": 13,
+      "target": 14,
+      "value": 0
+    },    {
+      "source": 13,
+      "target": 15,
+      "value": 0
+    },    {
+      "source": 13,
+      "target": 16,
+      "value": 4365
+    },    {
+      "source": 13,
+      "target": 17,
+      "value": 5238
+    },    {
+      "source": 13,
+      "target": 18,
+      "value": 6111
+    },    {
+      "source": 13,
+      "target": 19,
+      "value": 2619
+    },    {
+      "source": 13,
+      "target": 20,
+      "value": 1746
+    }
+  ]
+}

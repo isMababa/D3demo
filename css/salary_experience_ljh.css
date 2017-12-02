@@ -1,0 +1,11 @@
+
+.tooltipTt{
+    position: absolute;
+    width: auto;
+    height: auto;
+    color: #ffffff;
+    background-color: rgba(0,0,0,.4);
+    padding: 10px;
+    display: none;
+    border-radius: 5px;
+}

@@ -1,0 +1,9 @@
+
+.tooltipTxt{
+    background-color: rgba(0,0,0,.3);
+    width: auto;
+    height: auto;
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 8px;
+}
